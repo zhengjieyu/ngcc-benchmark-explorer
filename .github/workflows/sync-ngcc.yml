@@ -1,0 +1,82 @@
+name: Sync NGCC benchmark data
+
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ngcc-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Explorer
+        uses: actions/checkout@v4
+        with:
+          path: explorer
+
+      - name: Check out latest published harness
+        uses: actions/checkout@v4
+        with:
+          repository: ngcc-dev/ngcc-harness
+          path: harness
+          persist-credentials: false
+
+      - name: Check source revision
+        id: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          latest=$(git -C harness rev-parse HEAD)
+          current=$(python3 -c 'import json; print(json.load(open("explorer/data/normalized.json"))["source_commit"])')
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          if [[ "$latest" != "$current" ]]; then
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo "No new harness commit ($latest)."
+          fi
+
+      - name: Import published results
+        if: steps.source.outputs.changed == 'true'
+        run: python3 explorer/scripts/sync_ngcc.py --source harness --commit '${{ steps.source.outputs.latest }}'
+
+      - name: Install Node.js
+        if: steps.source.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: explorer/package-lock.json
+
+      - name: Validate updated data and site
+        if: steps.source.outputs.changed == 'true'
+        working-directory: explorer
+        run: |
+          python3 scripts/validate_dataset.py --commit '${{ steps.source.outputs.latest }}'
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          npm ci
+          npm test
+          npm run check
+          npm run build
+
+      - name: Commit updated data
+        if: steps.source.outputs.changed == 'true'
+        working-directory: explorer
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/normalized.json
+          if git diff --cached --quiet; then
+            echo 'No data change to commit.'
+          else
+            git commit -m "Sync NGCC harness data (${{ steps.source.outputs.latest }})"
+            git push
+          fi

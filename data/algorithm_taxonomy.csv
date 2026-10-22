@@ -1,0 +1,76 @@
+candidate_id,source_name,category,assumption
+sign-01,Aigis-Sig+,lattice,Asymmetric Module-LWE + asymmetric Module-SIS
+sign-02,BIT,lattice,Module-LWE + Module-SIS (bimodal SelfTargetMSIS)
+sign-03,CEDRUS+C,hash,Hash-based (preimage/collision resistance of the hash)
+sign-04,CEDRUSɑ,hash,Hash-based (preimage/collision resistance of the hash)
+sign-05,Chinith,symmetric/MPCitH,VOLE-in-the-Head over block-cipher one-wayness
+sign-06,COMPASS-SIG,lattice,Module-LWE + Module-SIS (SelfTargetMSIS_R / MISIS)
+sign-07,CS,lattice,Module-LWE + Module-SIS
+sign-08,DARTS,lattice,Module-LWE + Module-SIS
+sign-09,DOVE,multivariate,Multivariate quadratic (UOV with double vinegar)
+sign-10,Facto-DSA,multivariate,Cubic MQ system solving + polynomial factorisation trapdoor
+sign-11,FlexTree,hash,Hash-based (preimage/collision resistance of the hash)
+sign-12,Galas,symmetric/MPCitH,VOLE-in-the-Head over Gala OWF (F_2^lambda inversion)
+sign-13,GreatWall,symmetric/MPCitH,VOLE-in-the-Head over the Pylon OWF (preimage)
+sign-14,Lynxer,symmetric/MPCitH,VOLE-in-the-Head over the Lynx symmetric OWF
+sign-15,MORNING-ATLAS,lattice,Module-LWR + Module-SIS
+sign-16,Octarine,lattice,Radical Ring-LWR (Ring-LWR variant) + Ring/Module-SIS
+sign-17,OPS,lattice,Module-LWE + Module-SIS (SelfTargetMSIS)
+sign-18,Origami,multivariate,Multivariate quadratic (hidden-partitioned UOV)
+sign-19,Phoenix,hash,Hash-based (preimage/2nd-preimage/target collision)
+sign-20,Qing Luan,code,MPC-in-the-Head over R-SDP (restricted syndrome dec.)
+sign-21,ReSolveD-ɑ,code,VOLE-in-the-Head over Regular Syndrome Decoding
+sign-22,Rhyme,lattice,Gram-Aided Module-LWE (GA-MLWE) + Module-SIS
+sign-23,Shuttle,lattice,Module-LWE + Module-SIS
+sign-24,Sigurd,code,VOLE-in-the-Head over Regular Syndrome Decoding
+sign-25,SQIsign2D²,isogeny,Supersingular endomorphism ring problem
+sign-26,SQIsign2D-push^(1/2),isogeny,Supersingular endomorphism ring problem
+sign-27,SQIsignTriangle,isogeny,Supersingular endomorphism ring problem
+sign-28,SYDO,code,VOLE-in-the-Head over binary syndrome decoding
+sign-29,Tins,other,MPCitH over Normalized Subfield Bilinear Collision
+sign-30,TRINE,other,Trilinear Form Equivalence (tensor isomorphism)
+sign-31,TSUOV,multivariate,Multivariate quadratic (UOV) + MinRank
+sign-32,UVW signature,code,Ternary syndrome decoding at large weight
+sign-33,VDOO,multivariate,Multivariate quadratic (UOV/Rainbow) + MinRank
+sign-34,YuanYang.DSA,lattice,NTRU + Ring-SIS over NTRU lattices
+kem-01,Aigis-Enc+,lattice,Asymmetric Ring-LWE (ARLWE) + semi-uniform-seed ARLWE
+kem-02,Amoeba,lattice,Ring-LWE (non-power-of-two cyclotomic) + Hamming ECC
+kem-03,BAG-Loong,code,Blended-block rank syndrome decoding / 2-BRSL (rank metric)
+kem-04,BAG-Piglet,code,"Ideal block rank syndrome decoding / support learning (IRSD, IRSL)"
+kem-05,BIKE-MLThre,code,QC-MDPC syndrome decoding + quasi-cyclic codeword finding
+kem-06,BRA,code,Ideal blockwise rank syndrome decoding (IBRSD)
+kem-07,BRQC,code,Ideal Blockwise Rank Syndrome Decoding (IBRSD)
+kem-08,BW-KEM,lattice,Module-LWE (MLWE)
+kem-09,CheetahKEM,lattice,Module-LWE (Ring-LWE at k=1)
+kem-10,C-Multi-UR-AG,code,Unstructured Rank Syndrome Decoding + Rank Support Learning
+kem-11,COMPASS-KEM,lattice,Module-LWR (prime modulus) + biased Module-LWR
+kem-12,CTL,lattice,NTRU + search Ring-LWR
+kem-13,DKEM,lattice,Module-LWE (MLWE)
+kem-14,DTRU,lattice,NTRU + Ring-LWE
+kem-15,FLIT,lattice,NTRU + Ring-LWE
+kem-16,HARE,code,Unbalanced quasi-cyclic syndrome decoding (UQCSD)
+kem-17,HEP-QC,code,Equivalent Punctured Code + QC syndrome decoding
+kem-18,LoongKEM,lattice,Semi-structured LWE (SLWE)
+kem-19,Lore,lattice,CRT Module-LWR (Decision-CRT MLWR)
+kem-20,MAMBA-Frost,lattice,"LWE (unstructured), via Learning With Quantization"
+kem-21,MAMBA-Viper,lattice,"Module-LWE, via Module Learning With Quantization"
+kem-22,Mithril,lattice,Radical Ring-LWR (RR-LWR)
+kem-23,Mito,code,"Quasi-dyadic (2^l-adic) syndrome decoding, Hamming metric"
+kem-24,MORNING-Scabbard,lattice,Module-LWR (MLWR)
+kem-25,NEV,lattice,NTRU + Ring-LWE (subset-sum parity RLWE)
+kem-26,NSS-HQC,code,Quasi-cyclic syndrome decoding (Hamming)
+kem-27,NTRE,lattice,"NTRU + Ring-LWE (R-NTRU_eta, R-LWE_2eta)"
+kem-28,OAEP-NTRU,lattice,NTRU + Ring-LWE
+kem-29,Polar-KEM,lattice,Lattice Isomorphism Problem on polar lattices
+kem-30,PolarLAC,lattice,Module-LWE (with rejection sampling: MLWE_Rej)
+kem-31,QIMEN-PIKE,isogeny,Masked torsion-point supersingular isogeny problem
+kem-32,QCTM,code,Quasi-cyclic twisted-Goppa (McEliece) decoding
+kem-33,QUBE,code,"Quasi-cyclic syndrome decoding, unbalanced multi-block"
+kem-34,Rudraksh2,lattice,Module-LWE
+kem-35,Scloud+,lattice,LWE (unstructured)
+kem-36,TRIKE,code,Quasi-cyclic syndrome decoding (QC-MDPC) + RQCCF
+kem-37,TriQ-KEM,code,Constrained-weight quasi-cyclic syndrome decoding
+kem-38,UVW-KEM,code,"Decoding of generalized (U+V, U+W) codes over F_q"
+kem-39,Weaver,lattice,Module-LWR + Shifted-MLWR
+kem-40,YuanYang.KEM,lattice,NTRU + Ring-LWE
+kem-41,ZEN,lattice,NTRU + Ring-LWE (decisional)

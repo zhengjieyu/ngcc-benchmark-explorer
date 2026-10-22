@@ -1,0 +1,79 @@
+candidate_id,parameter_set,classical_target_bits,source_file,evidence_note
+kem-02,Amoeba192,192,kem-02/kem-02-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-02,Amoeba384,384,kem-02/kem-02-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-03,BAG-Loong-384,384,kem-03/kem-03-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-04,bag_piglet_384,384,kem-04/kem-04-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-09,Cheetah384,384,kem-09/kem-09-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-11,COMPASS-KEM-384,384,kem-11/kem-11-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-14,DTRU-1536,384,kem-14/kem-14-spec.pdf,DTRU specification maps DTRU-768 to 192 bits and DTRU-1536 to 384 bits; PACK_PK is a public-key encoding variant.
+kem-14,DTRU-1536-PACK_PK,384,kem-14/kem-14-spec.pdf,DTRU specification maps DTRU-768 to 192 bits and DTRU-1536 to 384 bits; PACK_PK is a public-key encoding variant.
+kem-14,DTRU-768,192,kem-14/kem-14-spec.pdf,DTRU specification maps DTRU-768 to 192 bits and DTRU-1536 to 384 bits; PACK_PK is a public-key encoding variant.
+kem-14,DTRU-768-PACK_PK,192,kem-14/kem-14-spec.pdf,DTRU specification maps DTRU-768 to 192 bits and DTRU-1536 to 384 bits; PACK_PK is a public-key encoding variant.
+kem-16,HARE-384-kr,384,kem-16/kem-16-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-17,hep-qc-3,192,kem-17/kem-17-spec.pdf,HEP-QC parameter table lists HEP-QC-3 at 192-bit classical security.
+kem-18,Loong384,384,kem-18/kem-18-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-192,192,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-384,384,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-CC-128,128,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-CC-192,192,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-CC-256,256,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-CC-384,384,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-20,MAMBA-Frost-CC-512,512,kem-20/kem-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-21,MAMBA-Viper-192,192,kem-21/kem-21-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-21,MAMBA-Viper-384,384,kem-21/kem-21-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-25,NEV_1024_3329_ICCS,256,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_1024_769_C_ICCS,256,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_1024_769_ICCS,256,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_2048_3329_ICCS,512,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_2048_769_C_ICCS,512,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_2048_769_ICCS,512,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_512_3329_ICCS,128,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_512_769_C_ICCS,128,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-25,NEV_512_769_ICCS,128,kem-25/kem-25-spec.pdf,"NEV specification groups its C/R/D profiles 1/2/3 at at least 128/256/512 classical bits, respectively."
+kem-26,HQC-384,384,kem-26/kem-26-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-30,POLARLAC-512,512,kem-30/kem-30-spec.pdf,PolarLAC specification calls this a 512-bit category; the q=257 choice has a documented DFR/query-bound caveat.
+kem-30,POLARLAC-Light,,kem-30/kem-30-spec.pdf,No discrete target is claimed for Light; specification Table 3 reports 121.6-bit classical Core-SVP estimate (and 143.8-bit refined BKZ estimate).
+kem-33,qube-192,192,kem-33/kem-33-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-33,qube-384,384,kem-33/kem-33-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-35,Scloudplus-192-AES-packed10,192,kem-35/kem-35-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-35,Scloudplus-192-SHAKE-packed10,192,kem-35/kem-35-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-35,Scloudplus-192-SM3-packed10,192,kem-35/kem-35-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-35,Scloudplus-384-AES-packed10,384,kem-35/kem-35-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-35,Scloudplus-384-SHAKE-packed10,384,kem-35/kem-35-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-35,Scloudplus-384-SM3-packed10,384,kem-35/kem-35-spec.pdf,The specification labels this parameter family with the stated classical security target.
+kem-36,TRIKE-7,384,kem-36/kem-36-spec.pdf,TRIKE parameter table maps TRIKE-7 to 384-bit classical security.
+kem-37,TriQ-KEM-384,384,kem-37/kem-37-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-03,CEDRUSC-384f,384,sign-03/sign-03-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-03,CEDRUSC-384s,384,sign-03/sign-03-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-04,CEDRUSALPHA-384f,384,sign-04/sign-04-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-04,CEDRUSALPHA-384s,384,sign-04/sign-04-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-06,COMPASS-SIG-384,384,sign-06/sign-06-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-11,Flextree-384f,384,sign-11/sign-11-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-11,Flextree-384s,384,sign-11/sign-11-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-12,Galas-384F,384,sign-12/sign-12-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-12,Galas-384S,384,sign-12/sign-12-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-13,GreatWall192f,192,sign-13/sign-13-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-13,GreatWall192s,192,sign-13/sign-13-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-14,Lynxer-384f,384,sign-14/sign-14-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-14,Lynxer-384s,384,sign-14/sign-14-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-15,lwrdsa192,192,sign-15/sign-15-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-18,Origami-384,384,sign-18/sign-18-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SHAKE-192f,192,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SHAKE-192s,192,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SHAKE-384f,384,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SHAKE-384s,384,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SM3-192f,192,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SM3-192s,192,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SM3-384f,384,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-19,Phoenix-SM3-384s,384,sign-19/sign-19-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-20,QingLuan-384,384,sign-20/sign-20-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-21,ReSolveD-alpha-384f,384,sign-21/sign-21-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-21,ReSolveD-alpha-384s,384,sign-21/sign-21-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-22,Rhyme-SHAKE-384,384,sign-22/sign-22-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-22,Rhyme-SM3-384,384,sign-22/sign-22-spec.pdf,The specification labels this parameter family with the stated classical security target.
+sign-25,SQISign2Dsquare-Level1-eff_compressed,128,sign-25/sign-25-spec.pdf,Specification identifies this Level 1 parameter family as targeting 128-bit classical security.
+sign-25,SQISign2Dsquare-Level1-eff_uncompressed,128,sign-25/sign-25-spec.pdf,Specification identifies this Level 1 parameter family as targeting 128-bit classical security.
+sign-25,SQISign2Dsquare-Level1-sec_compressed,128,sign-25/sign-25-spec.pdf,Specification identifies this Level 1 parameter family as targeting 128-bit classical security.
+sign-25,SQISign2Dsquare-Level1-sec_uncompressed,128,sign-25/sign-25-spec.pdf,Specification identifies this Level 1 parameter family as targeting 128-bit classical security.
+sign-26,SQIsign2D-lvl1,128,sign-26/sign-26-spec.pdf,Specification identifies this Level 1 parameter family as targeting 128-bit classical security.
+sign-27,SQIsignTriangle_lvl1,128,sign-27/sign-27-spec.pdf,Specification identifies this Level 1 parameter family as targeting 128-bit classical security.
